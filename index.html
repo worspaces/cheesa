@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom</title>
+    <script>
+        function rizz(input) {
+            return btoa(input.split("").reverse().join(""));
+        }
+
+        var haha = "aHR0cHM6Ly9saW5nb2phbS5jb20vZW1iZWQvY2hlZXNh";
+
+        var answer = prompt("The password is incorrect.");
+        var problem = rizz("incorrect");
+
+        if (rizz(answer) === problem) {
+            var bruh = atob(haha);
+            document.write(`
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Classroom</title>
+                    <style>
+                        html, body {
+                            margin: 0;
+                            padding: 0;
+                            height: 100%;
+                            overflow: hidden;
+                        }
+                        iframe {
+                            width: 100%;
+                            height: 100%;
+                            border: none;
+                            filter: invert(0.98) brightness(1.1);
+                        }
+                    </style>
+                </head>
+                <body>
+                    <iframe src="${bruh}" allowfullscreen></iframe>
+                </body>
+                </html>
+            `);
+        } else {
+            alert("I SAID, THE PASSWORD IS INCORRECT.");
+            window.location.href = "https://cheesa.wilburz.com/"; // Corrected redirection
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
